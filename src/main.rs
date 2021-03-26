@@ -29,7 +29,7 @@ fn daddy() -> String {
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![index])
+        .mount("/", routes![index, daddy])
         //.attach(Database::fairing())
         .launch();
 }
