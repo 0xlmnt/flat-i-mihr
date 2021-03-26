@@ -30,6 +30,6 @@ fn daddy() -> String {
 fn main() {
     rocket::ignite()
         .mount("/", routes![index])
-        .attach(Database::fairing())
+        //.attach(Database::fairing())
         .launch();
 }
