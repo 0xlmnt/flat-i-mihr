@@ -1,0 +1,26 @@
+[package]
+name = "flat-i-mihr"
+version = "0.1.0"
+authors = ["Paulî Oswaldo <beer.thierry@bluewin.ch>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.7"
+diesel = { version = "1.4.6", features = ["uuidv07"]}
+ring = "0.17.0-alpha.8"
+rust-argon2 = "0.8.3"
+
+[dependencies.rocket_contrib]
+version = "0.4.7"
+default-features = false
+features = ["diesel_postgres_pool", "uuid", "helmet", "serde", "json"]
+
+[dependencies.uuid]
+version = "0.7.4"
+features = ["serde", "v4"]
+
+[dependencies.serde]
+version = "1.0.125"
+features = ["derive"]
