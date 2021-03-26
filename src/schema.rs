@@ -11,3 +11,4 @@ table! {
         settings -> Nullable<Varchar>,
     }
 }
+

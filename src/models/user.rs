@@ -72,6 +72,3 @@ pub struct UserPassword {
     pub password: String,
     pub new_password: Option<String>
 }
-
-
-
