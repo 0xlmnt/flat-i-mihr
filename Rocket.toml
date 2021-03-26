@@ -1,2 +1,2 @@
 [global.databases]
-postgres_db = { url = "postgres://postgres:qwer@localhost/flatimir"}
+postgres_db = { url = ""}
